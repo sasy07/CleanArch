@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CleanArch.Core.Orders;
+namespace CleanArch.Domain.Orders;
 
 public class Order
 {

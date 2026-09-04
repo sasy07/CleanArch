@@ -1,4 +1,4 @@
-﻿namespace CleanArch.Core.Products;
+﻿namespace CleanArch.Domain.Products;
 
 public class Product
 {
