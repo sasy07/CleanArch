@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/EndPoints/">
+    <Project Path="CleanArch.Api/CleanArch.Api.csproj" Id="0655f31c-9185-442d-b365-d2419b7aeef7" />
+  </Folder>
   <Project Path="CleanArch.Application/CleanArch.Application.csproj" />
-  <Project Path="CleanArch.Core/CleanArch.Domain.csproj" />
+  <Project Path="CleanArch.Config/CleanArch.Config.csproj" Id="d3a4f133-bd30-4e94-a0f0-1fb5a066600e" />
+  <Project Path="CleanArch.Contracts/CleanArch.Contracts.csproj" Id="df893b08-a291-4ad6-aeba-37d464bf031f" />
+  <Project Path="CleanArch.Domain/CleanArch.Domain.csproj" Id="a55912a4-823e-428f-9b8d-e838e6aed099" />
+  <Project Path="CleanArch.Infrastructure/CleanArch.Infrastructure.csproj" Id="9baccd4c-57a7-4407-8eb8-2879e6e64dd5" />
 </Solution>

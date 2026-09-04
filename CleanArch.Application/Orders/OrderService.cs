@@ -1,4 +1,5 @@
 ﻿using CleanArch.Application.Orders.DTOs;
+using CleanArch.Contracts;
 using CleanArch.Domain.Orders;
 using CleanArch.Domain.Orders.Repository;
 
@@ -7,10 +8,11 @@ namespace CleanArch.Application.Orders;
 public class OrderService : IOrderService
 {
     private readonly IOrderRepository _orderRepository;
-
-    public OrderService(IOrderRepository orderRepository)
+    private ISmsService _smsService;    
+    public OrderService(IOrderRepository orderRepository, ISmsService smsService)
     {
         _orderRepository = orderRepository;
+        _smsService = smsService;
     }
     public void AddOrder(AddOrderDto command)
     {
@@ -25,6 +27,11 @@ public class OrderService : IOrderService
         order.Finally();
         _orderRepository.Update(order);
         _orderRepository.SaveChanges();
+        _smsService.SendSms(new SmsBody
+        {
+            Message = "Your order has been finalized successfully.",
+            PhoneNumber = "09123456789"
+        });   
     }
 
     public OrderDto GetOrder(long id)
