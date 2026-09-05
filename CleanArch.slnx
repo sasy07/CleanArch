@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/EndPoints/">
     <Project Path="CleanArch.Api/CleanArch.Api.csproj" Id="0655f31c-9185-442d-b365-d2419b7aeef7" />
+    <Project Path="CleanArch.ConsoleApp/CleanArch.ConsoleApp.csproj" Id="904790ac-1e28-4a66-9108-ffabdc39e85c" />
   </Folder>
   <Project Path="CleanArch.Application/CleanArch.Application.csproj" />
   <Project Path="CleanArch.Config/CleanArch.Config.csproj" Id="d3a4f133-bd30-4e94-a0f0-1fb5a066600e" />
